@@ -1,21 +1,34 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	
 	<head>
-		<title>Edwin Bodge</title>
+		<title>Anagram Checker</title>
+		<link href="sheetdisplay.css" rel="stylesheet" type="text/css" />
 		<script src="anagram.js"></script>
 	</head>
 	
 <body>
-	
-<form id="frm1" action="form_action.asp">
-  First word: <input type="text" name="word1" value="abc"><br>
-  Second word: <input type="text" name="word2" value="bca"><br><br>
-</form>
 
-<p>Click "Check" see if the two words are anagrams.</p>
+<div id="inputs">
+	<form type="text" id="frm1" action="form_action.asp">
+		<label for="w1">
+				<input type="text" name="word1" value="First Word" 
+					onblur="if(this.value==''){ this.value='First Word'; this.style.color='#BBB';}"
+  					onfocus="if(this.value=='First Word'){ this.value=''; this.style.color='#000';}"
+  					style="color:#BBB;" />
+	  	</label>
+		<label for="w2">
+				<input type="text" name="word2" value="Second Word" 
+					onblur="if(this.value==''){ this.value='Second Word'; this.style.color='#BBB';}"
+  					onfocus="if(this.value=='Second Word'){ this.value=''; this.style.color='#000';}"
+  					style="color:#BBB;" />
+	  	</label>	
+	</form>
+</div>
 
-<button onclick="checkAnagram()">Check</button>
+<center><button onclick="checkAnagram()">Check</button></center>
+
+
 
 <p id="demo1"></p>
 
