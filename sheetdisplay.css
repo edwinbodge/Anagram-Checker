@@ -22,7 +22,6 @@ body {
 	width: 9em;
 }
 
-
 #instructions {
 	position: relative;
 	top: 9.1em;
@@ -35,8 +34,7 @@ body {
 	font-variant: normal;
 	font-weight: 100;
 	line-height: 20px;
-	width: 18em;
-	
+	width: 18em;	
 }
 
 #clarify {
@@ -52,20 +50,18 @@ body {
 	font-weight: 100;
 	line-height: 25px;
 	width: 15em;
-	
 }
 
 #inputs {
-	position: relative;
+    position: relative;
     top: 12.2em;
     left: 50%;
     width: 30em;
     height: 4em;
     margin: 0 auto;
-    margin-top: -2em; /*set to a negative number 1/2 of your height*/
-    margin-left: -13.2em; /*set to a negative number 1/2 of your width*/	
+    margin-top: -2em; 
+    margin-left: -13.2em; 	
 }
-
 
 .copyright {
 	position: absolute;
@@ -83,11 +79,9 @@ body {
 	overflow:hidden
 }
 
-
 a {
 	color: white;
 }
-
 
 input[type=text]:focus {
 	outline:0;
@@ -124,11 +118,6 @@ button {
     cursor: pointer;
 }
 
-button:focus {
-	outline:0;
-}
-
-
 button:hover {
 	transition: all .2s ease;
     box-shadow:  0 0 0 3px white;
@@ -146,7 +135,6 @@ span {
 	font-size: 1.2em; 
 	font-weight: bold; 
 }
-
 
 .icon {
 	height:35px;
@@ -175,5 +163,4 @@ span {
 
 #horizontal ul li { 
 	display: inline; 
-}
-
+} 
