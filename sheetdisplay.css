@@ -89,9 +89,7 @@ a {
 }
 
 
-input[type=text]:focus {
-	outline:0;
-}
+
 
 input[type=text], select {
     width: 100%;
@@ -124,9 +122,6 @@ button {
     cursor: pointer;
 }
 
-button:focus {
-	outline:0;
-}
 
 
 button:hover {
