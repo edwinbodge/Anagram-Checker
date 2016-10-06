@@ -3,17 +3,18 @@
 body {
 	  transition: all 1s ease;
   	  background-color: #45b0f7;
+  	  font-family: Lucida Grande;
 }
 
 #title {
 	position:relative;
-	top: 2.8em;
+	top: 3.1em;
 	left:50%;
 	margin-left: -4.5em;
-	font-size: 50px;
+	font-size: 45px;
 	text-align: center;
 	color: white;
-	font-family: Calibri;
+	font-family: Lucida Grande;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -24,30 +25,28 @@ body {
 
 #instructions {
 	position: relative;
-	top: 7.8em;
+	top: 9.1em;
 	left:50%;
 	margin-left: -7.5em;
-	font-size: 20px;
+	font-size: 17px;
 	text-align: center;
 	color: white;
-	font-family: Calibri;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
-	line-height: 25px;
+	line-height: 20px;
 	width: 15em;
 	
 }
 
 #clarify {
 	position: relative;
-	top: 14em;
+	top: 17.5em;
 	left:50%;
 	margin-left: -7.5em;
-	font-size: 15px;
+	font-size: 12px;
 	text-align: center;
 	color: white;
-	font-family: Calibri;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
@@ -73,10 +72,9 @@ body {
 	bottom: 5px;
 	left:50%;
 	margin-left:-7.5em;
-	font-size: 10px;
+	font-size: 9px;
 	text-align: center;
 	color: white;
-	font-family: Calibri;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
@@ -91,6 +89,9 @@ a {
 }
 
 
+input[type=text]:focus {
+	outline:0;
+}
 
 input[type=text], select {
     width: 100%;
@@ -122,6 +123,11 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+button:focus {
+	outline:0;
+}
+
 
 button:hover {
 	transition: all .2s ease;
