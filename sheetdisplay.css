@@ -6,10 +6,10 @@ body {
 }
 
 #title {
-	position:fixed;
-	top: 25%;
+	position:relative;
+	top: 2.8em;
 	left:50%;
-	margin-left: -15em;
+	margin-left: -4.5em;
 	font-size: 50px;
 	text-align: center;
 	color: white;
@@ -18,13 +18,13 @@ body {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 40px;
-	width: 30em;
+	width: 9em;
 }
 
 
 #instructions {
-	position:fixed;
-	top: 35%;
+	position: relative;
+	top: 7.8em;
 	left:50%;
 	margin-left: -7.5em;
 	font-size: 20px;
@@ -40,8 +40,8 @@ body {
 }
 
 #clarify {
-	position:fixed;
-	top: 64.5%;
+	position: relative;
+	top: 14em;
 	left:50%;
 	margin-left: -7.5em;
 	font-size: 15px;
@@ -57,8 +57,8 @@ body {
 }
 
 #inputs {
-	position:fixed;
-    top: 50%;
+	position: relative;
+    top: 12.2em;
     left: 50%;
     width: 30em;
     height: 4em;
@@ -68,8 +68,8 @@ body {
 }
 
 #copyright {
-	position:fixed;
-	top: 97.3%;
+	position: relative;
+	top: 31em;
 	left:50%;
 	margin-left: -7.5em;
 	font-size: 10px;
@@ -107,8 +107,8 @@ Button.blocktext {
 }
 
 button {
-    position: fixed;
-    top:55%;
+    position: relative;
+    top: 18em;
     width: 30em;
     background-color: Transparent;
     color: white;
@@ -124,7 +124,6 @@ button {
 button:hover {
 	transition: all .2s ease;
     box-shadow:  0 0 0 3px white;
-
 }
 
 label { 
@@ -147,12 +146,15 @@ span {
 	color: white;
 }
 
+.icon:hover {
+	transition: all .2s ease;
+	opacity: 0.7;
+}
+
 #horizontal ul {
-	position:fixed;
-	top: 88%;
-	left:50%;
+	position: relative;
+	top: 20em;
 	width:150px;
-	margin-left: -75px;
 	padding: 0;
 	list-style-type: none;
 }
