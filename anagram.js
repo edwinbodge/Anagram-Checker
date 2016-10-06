@@ -3,6 +3,8 @@
  * Removes all spaces and punctuation, then sorts each string.
  * Compares sorted strings to see if all elements are equal
  */
+var isTrue = -1;
+
 function checkAnagram() {
     var x = document.getElementById("frm1");//retrieve information from "Form 1" in index.html 
     var word1 = x.elements[0].value;		//assign 1st and 2nd inputs into respective strings 
@@ -10,9 +12,20 @@ function checkAnagram() {
     var sortedWord1 = sortMyString(word1);	//remove spaces/punctuation and sort both strings
     var sortedWord2 = sortMyString(word2);
     if(sortedWord1 === sortedWord2) {
-    	document.body.style.backgroundColor = "#15bf37";
+    	if(isTrue != 1) {
+    		document.body.style.backgroundColor = "#20c111";
+    		isTrue = 1;
+    	} else {
+    		document.body.style.backgroundColor = "#4aef3b";
+    		setTimeout(function(){ document.body.style.backgroundColor = "#20c111"; }, 1000);
+    	}
     } else {
-    	document.body.style.backgroundColor = "#cc1414";
+    	if(isTrue != 0) {
+    		document.body.style.backgroundColor = "#ce1616";
+    		isTrue = 0;
+    	} else {
+    		document.body.style.backgroundColor = "#6d0000";
+    		setTimeout(function(){ document.body.style.backgroundColor = "#ce1616"; }, 1000);    	}
     }
 }
 
