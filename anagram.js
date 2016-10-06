@@ -13,16 +13,16 @@ function checkAnagram() {
     var sortedWord2 = sortMyString(word2);
     if(sortedWord1 === sortedWord2) {
     	if(isTrue != 1) {
+		isTrue = 1;
     		document.body.style.backgroundColor = "#71B200";
-    		isTrue = 1;
     	} else {
     		document.body.style.backgroundColor = "#8EE000";
     		setTimeout(function(){ document.body.style.backgroundColor = "#71B200"; }, 1000);
     	}
     } else {
     	if(isTrue != 0) {
+		isTrue = 0;
     		document.body.style.backgroundColor = "#D43231";
-    		isTrue = 0;
     	} else {
     		document.body.style.backgroundColor = "#6d0000";
     		setTimeout(function(){ document.body.style.backgroundColor = "#D43231"; }, 1000);    	}
