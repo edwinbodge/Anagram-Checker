@@ -16,7 +16,7 @@ function checkAnagram() {
     		document.body.style.backgroundColor = "#20c111";
     		isTrue = 1;
     	} else {
-    		document.body.style.backgroundColor = "#4aef3b";
+    		document.body.style.backgroundColor = "#56e83c";
     		setTimeout(function(){ document.body.style.backgroundColor = "#20c111"; }, 1000);
     	}
     } else {
