@@ -23,7 +23,7 @@
 <div id="inputs">
 	<form id="frm1" action="form_action.asp">
 		<label for="w1">
-				<input type="text" name="word1" value="First Sentence" tabindex=0
+				<input id="tbox1" type="text" name="word1" value="First Sentence" tabindex=0
 					onblur="if(this.value==''){ this.value='First Sentence'; this.style.color='#BBB';}"
   					onfocus="if(this.value=='First Sentence'){ this.value=''; this.style.color='#000';}"
   					style="color:#BBB;" 
@@ -31,7 +31,7 @@
                         document.getElementById('check').click()" />
 	  	</label>
 		<label for="w2">
-				<input type="text" name="word2" value="Second Sentence" tabindex=0
+				<input id="tbox2" type="text" name="word2" value="Second Sentence" tabindex=0
 					onblur="if(this.value==''){ this.value='Second Sentence'; this.style.color='#BBB';}"
   					onfocus="if(this.value=='Second Sentence'){ this.value=''; this.style.color='#000';}"
   					style="color:#BBB;" 
